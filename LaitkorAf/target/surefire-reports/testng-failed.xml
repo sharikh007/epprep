@@ -9,8 +9,19 @@
         <methods>
           <include name="closebrow"/>
           <include name="bef"/>
-          <include name="paralleltesttwo"/>
-          <include name="paralleltetsone"/>
+          <include name="eppregcheck"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="test2(failed)" parallel="tests" preserve-order="false">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Laitkorgp.AppTest">
+        <methods>
+          <include name="closebrow"/>
+          <include name="bef"/>
+          <include name="eppregcheck"/>
         </methods>
       </class>
     </classes>

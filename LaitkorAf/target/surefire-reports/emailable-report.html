@@ -29,10 +29,10 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">test4</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">73.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">test2</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">51.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">test4</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">95.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">test2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">173.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">2</td><td class="numi">2</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">73.3 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi_attn">2</td><td class="numi">173.2 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
@@ -40,11 +40,11 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <tr><th colspan="4">test4 &#8212; failed (configuration methods)</th></tr>
 <tr class="failedodd"><td rowspan="1">Laitkorgp.AppTest<td><a href="#m1"><b>bef</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
 <tr><th colspan="4">test4 &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">Laitkorgp.AppTest<td><a href="#m2"><b>closebrow</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="3">Laitkorgp.AppTest<td><a href="#m2"><b>closebrow</b>  </a></td><td class="numi">2</td><td class="numi">9</td></tr><tr class="skippedodd"><td><a href="#m3"><b>closebrow</b>  </a></td><td class="numi">2</td><td class="numi">9</td></tr><tr class="skippedodd"><td><a href="#m4"><b>bef</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
 <tr><th colspan="4">test4 &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="2">Laitkorgp.AppTest<td><a href="#m3"><b>paralleltesttwo</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m4"><b>paralleltetsone</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
-<tr><th colspan="4">test2 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">Laitkorgp.AppTest<td><a href="#m5"><b>paralleltetsone</b>  </a></td><td class="numi">1</td><td class="numi">9985</td></tr><tr class="passedodd"><td><a href="#m6"><b>paralleltesttwo</b>  </a></td><td class="numi">1</td><td class="numi">12795</td></tr>
+<tr class="skippedodd"><td rowspan="2">Laitkorgp.AppTest<td><a href="#m5"><b>eppregcheck</b>  </a></td><td class="numi">2</td><td class="numi">120</td></tr><tr class="skippedodd"><td><a href="#m6"><b>eppregcheck</b>  </a></td><td class="numi">2</td><td class="numi">120</td></tr>
+<tr><th colspan="4">test2 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">Laitkorgp.AppTest<td><a href="#m7"><b>eppregcheck</b>  </a></td><td class="numi">2</td><td class="numi">113188</td></tr><tr class="failedodd"><td><a href="#m8"><b>eppregcheck</b>  </a></td><td class="numi">2</td><td class="numi">113188</td></tr>
 </table>
 <h1>test4</h1>
 <a id="m1"></a><h2>Laitkorgp.AppTest:bef</h2>
@@ -54,29 +54,25 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
 <p>Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
-1437484252380	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
-1437484252406	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
-1437484252411	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/tmp/anonymous768765754161956253webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.0&quot;,&quot;st&quot;:1437484217000,&quot;mt&quot;:1437484217000}},&quot;app-global&quot;:{&quot;langpack-en-ZA@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000},&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;38.0&quot;,&quot;st&quot;:1432726039000,&quot;mt&quot;:1431341938000},&quot;langpack-en-GB@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
-1437484252436	addons.xpi	DEBUG	No changes found
-1437484252447	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
-1437484252456	addons.manager	DEBUG	Provider finished startup: XPIProvider
-1437484252457	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1437484252458	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1437484252460	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1437484252465	addons.manager	DEBUG	Starting provider: GMPProvider
-1437484252487	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1437484252487	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1437484252487	addons.manager	DEBUG	Starting provider: PluginProvider
-1437484252488	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1437484252488	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1437484252488	addons.manager	DEBUG	Completed startup sequence
-JavaScript error: file:///tmp/anonymous768765754161956253webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+a.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
+1437648539348	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1437648539384	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1437648539428	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/tmp/anonymous5771086402359689910webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.0&quot;,&quot;st&quot;:1437648472000,&quot;mt&quot;:1437648472000}},&quot;app-global&quot;:{&quot;langpack-en-ZA@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000},&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;38.0&quot;,&quot;st&quot;:1432726039000,&quot;mt&quot;:1431341938000},&quot;langpack-en-GB@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
+1437648539449	addons.xpi	DEBUG	No changes found
+1437648539459	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1437648539460	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1437648539461	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1437648539461	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1437648539461	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1437648539462	addons.manager	DEBUG	Starting provider: GMPProvider
+1437648539472	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1437648539473	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1437648539473	addons.manager	DEBUG	Starting provider: PluginProvider
+1437648539473	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1437648539474	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1437648539475	addons.manager	DEBUG	Completed startup sequence
+JavaScript error: file:///tmp/anonymous5771086402359689910webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
 JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-1437484270850	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
-1437484270850	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
-1437484270851	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
 
 Build info: version: &apos;2.43.0&apos;, revision: &apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&apos;, time: &apos;2014-09-09 22:22:51&apos;
 System info: host: &apos;sayed-MS-7309&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-44-generic&apos;, java.version: &apos;1.7.0_75&apos;
@@ -88,32 +84,28 @@ org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProf
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-<br/>at Laitkorgp.AppTest.bef(AppTest.java:19)
-<br/>18 lines not shown
+<br/>at Laitkorgp.AppTest.bef(AppTest.java:32)
+<br/>23 lines not shown
 <p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
-1437484252380	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
-1437484252406	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
-1437484252411	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/tmp/anonymous768765754161956253webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.0&quot;,&quot;st&quot;:1437484217000,&quot;mt&quot;:1437484217000}},&quot;app-global&quot;:{&quot;langpack-en-ZA@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000},&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;38.0&quot;,&quot;st&quot;:1432726039000,&quot;mt&quot;:1431341938000},&quot;langpack-en-GB@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
-1437484252436	addons.xpi	DEBUG	No changes found
-1437484252447	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
-1437484252456	addons.manager	DEBUG	Provider finished startup: XPIProvider
-1437484252457	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1437484252458	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1437484252460	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1437484252465	addons.manager	DEBUG	Starting provider: GMPProvider
-1437484252487	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1437484252487	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1437484252487	addons.manager	DEBUG	Starting provider: PluginProvider
-1437484252488	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1437484252488	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1437484252488	addons.manager	DEBUG	Completed startup sequence
-JavaScript error: file:///tmp/anonymous768765754161956253webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+a.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
+1437648539348	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1437648539384	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1437648539428	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/tmp/anonymous5771086402359689910webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.0&quot;,&quot;st&quot;:1437648472000,&quot;mt&quot;:1437648472000}},&quot;app-global&quot;:{&quot;langpack-en-ZA@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000},&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;38.0&quot;,&quot;st&quot;:1432726039000,&quot;mt&quot;:1431341938000},&quot;langpack-en-GB@firefox.mozilla.org&quot;:{&quot;d&quot;:&quot;/usr/lib/firefox/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;35.0&quot;,&quot;st&quot;:1421097244000}},&quot;app-system-share&quot;:{&quot;webapps-team@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/webapps-team@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0.2&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1397665356000},&quot;{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{2e1445b0-2682-11e1-bfc2-0800200c9a66}&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2014.08.06.beta&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1407283796000},&quot;ubufox@ubuntu.com&quot;:{&quot;d&quot;:&quot;/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/ubufox@ubuntu.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;3.0&quot;,&quot;st&quot;:1421999490000,&quot;mt&quot;:1420839872000}},&quot;app-system-local&quot;:{&quot;online-accounts@lists.launchpad.net&quot;:{&quot;d&quot;:&quot;/usr/lib/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/online-accounts@lists.launchpad.net&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;0.5&quot;,&quot;st&quot;:1421999491000,&quot;mt&quot;:1390969638000}}}
+1437648539449	addons.xpi	DEBUG	No changes found
+1437648539459	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1437648539460	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1437648539461	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1437648539461	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1437648539461	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1437648539462	addons.manager	DEBUG	Starting provider: GMPProvider
+1437648539472	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1437648539473	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1437648539473	addons.manager	DEBUG	Starting provider: PluginProvider
+1437648539473	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1437648539474	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1437648539475	addons.manager	DEBUG	Completed startup sequence
+JavaScript error: file:///tmp/anonymous5771086402359689910webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
 JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
-*** Blocklist::_preloadBlocklistFile: blocklist is disabled
-1437484270850	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
-1437484270850	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
-1437484270851	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
 </p>
 org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
@@ -122,20 +114,74 @@ org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProf
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
 <br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
-<br/>at Laitkorgp.AppTest.bef(AppTest.java:19)
-<br/>18 lines not shown
+<br/>at Laitkorgp.AppTest.bef(AppTest.java:32)
+<br/>23 lines not shown
 </td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m2"></a><h2>Laitkorgp.AppTest:closebrow</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>Laitkorgp.AppTest:paralleltesttwo</h2>
+<a id="m3"></a><h2>Laitkorgp.AppTest:closebrow</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>Laitkorgp.AppTest:paralleltetsone</h2>
+<a id="m4"></a><h2>Laitkorgp.AppTest:bef</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>Laitkorgp.AppTest:eppregcheck</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>Laitkorgp.AppTest:eppregcheck</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h1>test2</h1>
-<a id="m5"></a><h2>Laitkorgp.AppTest:paralleltetsone</h2>
+<a id="m7"></a><h2>Laitkorgp.AppTest:eppregcheck</h2>
+<div style="padding-left:3em">
+<p>Timed out after 50 seconds waiting for visibility of element located by By.name: ctl00$ContentPlaceHolder1$txtUserName
+Build info: version: &apos;2.43.0&apos;, revision: &apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&apos;, time: &apos;2014-09-09 22:22:51&apos;
+System info: host: &apos;sayed-MS-7309&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-44-generic&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: fa361b5d702eecbedf6497f23da034fe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.8t6hIT}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+<br/>at Laitkorgp.AppTest.eppregcheck(AppTest.java:47)
+<br/>21 lines not shown
+<p>Caused by no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=40.0.2214.91)
+  (Driver info: chromedriver=2.9.248316,platform=Linux 3.13.0-44-generic x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;2.43.0&apos;, revision: &apos;accb3003b9fb8f7cae30f9669b4c594a065396a6&apos;, time: &apos;2014-09-09 22:22:51&apos;
+System info: host: &apos;sayed-MS-7309&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-44-generic&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: fa361b5d702eecbedf6497f23da034fe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/tmp/.com.google.Chrome.8t6hIT}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+<br/>at org.openqa.selenium.By$ByName.findElement(By.java:299)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+<br/>at Laitkorgp.AppTest.eppregcheck(AppTest.java:47)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>Laitkorgp.AppTest:paralleltesttwo</h2>
+<a id="m8"></a><h2>Laitkorgp.AppTest:eppregcheck</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:323)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+<br/>at Laitkorgp.AppTest.eppregcheck(AppTest.java:47)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
